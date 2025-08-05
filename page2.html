@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LinguaQuest</title>
+  <title>Lesson 1: Multiple Choice Questions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="icons">
-      <span class="icon question">?</span>
-      <span class="icon check">&#10003;</span>
-      <span class="icon exclamation">!</span>
+  <h2>Lesson 1: Multiple Choice Questions</h2>
+  <form id="mcq-form">
+    <p>1. German word for house ?</p>
+    <label><input type="radio" name="q1" value="Berlin"> Katze</label>
+    <label><input type="radio" name="q1" value="München"> Haus</label>
+    <label><input type="radio" name="q1" value="Hamburg"> Buch</label>
+    <p>2. How do you say "thank you" in german?</p>
+    <label><input type="radio" name="q2" value="Apfel"> Guten Tag</label>
+    <label><input type="radio" name="q2" value="Birne"> Bitte</label>
+    <label><input type="radio" name="q2" value="Banane"> Tschuss</label>
+    <p>3. Choose the correct word for "Apple" </p>
+    <label><input type="radio" name="q3" value="Blau"> Traube</label>
+    <label><input type="radio" name="q3" value="Grün"> Apfel</label>
+    <label><input type="radio" name="q3" value="Rot"> Birne</label>
+    <br><br>
+   
+   
+    <div style="text-align: center;">
+    <button type="button" class="submit-btn" onclick="submitMCQ()">Next</button>
     </div>
-    <h1 class="title">LINGUAQUEST</h1>
-    <select class="language-select">
-      <option selected disabled>Select Language</option>
-      <option value="de">German</option>
-     
-    </select>
-  </div>
+   </form>
+  <script src="mcq.js"></script>
+  
 </body>
 </html>

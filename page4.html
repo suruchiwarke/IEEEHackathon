@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 1: Drag & Drop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <h2>Lesson 1: Drag & Drop</h2>
+  <div>
+    <div class="drag" draggable="true" id="drag1">Hund</div>
+    <div class="drag" draggable="true" id="drag2">Katze</div>
+    <div class="drag" draggable="true" id="drag3">Vogel</div>
+  </div>
+  <div>
+    <div class="drop" data-answer="Katze">Cat</div>
+    <div class="drop" data-answer="Vogel">Bird</div>
+    <div class="drop" data-answer="Hund">Dog</div>
+  </div>
+  <br>
+ <div style="text-align: center;">
+    <button type="button" class="submit-btn" onclick="submitDrag()">Submit</button>
+    </div>
+  <script src="drag.js"></script>
+</body>
+</html>
